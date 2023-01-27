@@ -1,4 +1,4 @@
-module github.com/indentapis/terraform-provider-indent
+module go.indent.com/terraform-provider-indent
 
 go 1.18
 
