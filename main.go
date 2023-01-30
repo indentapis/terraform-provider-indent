@@ -9,12 +9,12 @@ import (
 )
 
 // Generate the Terraform provider documentation using `tfplugindocs`:
-//go:generate go run github.com/hashicorp/terraform-plugin-docs/cmd/tfplugindocs
+//go:generate go run github.com/hashicorp/terraform-plugin-docs/cmd/tfplugindocs generate --provider-name indent
 
 func main() {
 	plugin.Serve(&plugin.ServeOpts{
 		Debug:        os.Getenv("INDENT_PROVIDER_DEBUG") == "true",
-		ProviderAddr: "terraform.io/indentapis/indent",
+		ProviderAddr: "indentapis/indent",
 		ProviderFunc: provider.Provider,
 	})
 }

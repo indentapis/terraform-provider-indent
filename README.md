@@ -1,8 +1,9 @@
 ### terraform-provider-indent
 
-Auth is currently handled with the `indent` cli. To log in:
+Auth can be handled either with a Google Service Account JSON file, or with the `indent` cli.
 
-`$ indent auth login --space my-space-name`
+To use the `indent` cli:
+$ indent auth login --space my-space-name
 
 To verify you have authenticated successfully, you can check `auth view`:
 
@@ -27,6 +28,7 @@ Once you've successfully authenticated, you can initialize the provider:
 ```terraform
 provider "indent" {
   space = "my-space-name"
+  // json_key_file = "/path/to/file.json"
 }
 ```
 
