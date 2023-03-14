@@ -1,8 +1,11 @@
-module go.indent.com/terraform-provider-indent
+module github.com/indentapis/terraform-provider-indent
 
 go 1.18
 
-require github.com/hashicorp/terraform-plugin-sdk/v2 v2.24.1
+require (
+	github.com/hashicorp/terraform-plugin-sdk/v2 v2.24.1
+	go.indent.com/indent-go v0.0.9-0.20230119081731-51229bc93f9b
+)
 
 require (
 	cloud.google.com/go v0.34.0 // indirect
@@ -39,20 +42,19 @@ require (
 	github.com/vmihailenco/msgpack/v4 v4.3.12 // indirect
 	github.com/vmihailenco/tagparser v0.1.1 // indirect
 	github.com/zclconf/go-cty v1.12.1 // indirect
-	go.indent.com/indent-go v0.0.9-0.20230130182250-ded99026d98d // indirect
 	go.uber.org/atomic v1.5.0 // indirect
 	go.uber.org/multierr v1.3.0 // indirect
 	go.uber.org/tools v0.0.0-20190618225709-2cfd321de3ee // indirect
 	go.uber.org/zap v1.14.0 // indirect
 	golang.org/x/lint v0.0.0-20190930215403-16217165b5de // indirect
-	golang.org/x/mod v0.6.0 // indirect
+	golang.org/x/mod v0.6.0-dev.0.20220419223038-86c51ed26bb4 // indirect
 	golang.org/x/net v0.3.1-0.20221206200815-1e63c2f08a10 // indirect
 	golang.org/x/oauth2 v0.0.0-20200107190931-bf48bf16ab8d // indirect
 	golang.org/x/sys v0.3.0 // indirect
 	golang.org/x/text v0.5.0 // indirect
-	golang.org/x/tools v0.2.0 // indirect
+	golang.org/x/tools v0.1.12 // indirect
 	google.golang.org/appengine v1.6.6 // indirect
-	google.golang.org/genproto v0.0.0-20201019141844-1ed22bb0c154 // indirect
+	google.golang.org/genproto v0.0.0-20200711021454-869866162049 // indirect
 	google.golang.org/grpc v1.50.1 // indirect
 	google.golang.org/protobuf v1.28.1 // indirect
 	honnef.co/go/tools v0.0.1-2019.2.3 // indirect
