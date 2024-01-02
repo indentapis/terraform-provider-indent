@@ -44,7 +44,7 @@ func Provider() *schema.Provider {
 }
 
 func providerConfigure(ctx context.Context, d *schema.ResourceData) (interface{}, diag.Diagnostics) {
-	f, config := cliutil.New()
+	f, config := cliutil.New(nil)
 	var ok bool
 	if config.Space, ok = d.Get("space").(string); !ok {
 		return nil, diag.Errorf("failed to cast space to string")
